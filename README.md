@@ -1,5 +1,5 @@
 # Data warehouse based on ClickHouse
-
+![Warehouse Logo](/images/data-warehouse.png)
 ## Basic information
 
 Docker compose files for building data warehouse based on components below
