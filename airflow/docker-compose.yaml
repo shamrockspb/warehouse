@@ -151,3 +151,9 @@ services:
 
 volumes:
   postgres-db-volume:
+ 
+#Network
+networks: 
+  default: 
+    external: 
+      name: external-warehouse 

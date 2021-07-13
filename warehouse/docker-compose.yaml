@@ -60,3 +60,9 @@ volumes:
   kafka_data:
     driver: local
 
+
+#Network
+networks: 
+  default: 
+    external: 
+      name: external-warehouse

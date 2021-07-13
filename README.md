@@ -10,6 +10,11 @@ Docker compose files for building data warehouse based on components below
 
 ## Get started
 
+### Prepare Docker network
+
+`$ docker network create external-warehouse`
+
+
 ### Start ClickHouse, Kafka and PostgreSQL:
 
 `$ cd warehouse`
@@ -58,21 +63,28 @@ ed9b09fc84b1   apache/airflow:2.1.1   "/usr/bin/dumb-init …"   3 minutes ago  
 
 ## Useful links
 
+### Airflow
 
  - [Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 
  - [Airflow Architecture Overview](https://airflow.apache.org/docs/apache-airflow/stable/concepts/overview.html)
 
+ - [Airflow Tutorial](https://github.com/dmlogv/airflow-tutorial)
+
+### Clickhouse
+ 
  - [ClickHouse with docker-compose running](https://github.com/rongfengliang/clickhouse-docker-compose)
 
  - [ClickHouse Server Docker Image](https://hub.docker.com/r/yandex/clickhouse-server)
 
  - [ClickHouse - Visual Interfaces from Third-party Developers](https://github.com/ClickHouse/ClickHouse/blob/master/docs/en/interfaces/third-party/gui.md)
 
+### Kafka
+
  - [Bitnami Docker Image for Kafka](https://hub.docker.com/r/bitnami/kafka/)
 
  - [Bitnami Docker Compose for Kafka](https://github.com/bitnami/bitnami-docker-kafka/blob/master/docker-compose.yml)
 
+### Other
 
-
-
+- [Docker networks](https://tjtelan.com/blog/how-to-link-multiple-docker-compose-via-network/)
